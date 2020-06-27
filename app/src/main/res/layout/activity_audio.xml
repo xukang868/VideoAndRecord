@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/PCMRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="PCM start"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/PCMplay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PCMplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="PCMplay"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/PCMRecord"
+        app:layout_constraintStart_toEndOf="@+id/PCMRecord"
+        app:layout_constraintTop_toTopOf="@+id/PCMRecord"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/WavPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="WavPlay"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/PCMplay"
+        app:layout_constraintStart_toEndOf="@+id/PCMplay"
+        app:layout_constraintTop_toTopOf="@+id/PCMplay" />
+
+    <Button
+        android:id="@+id/Mp3Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Mp3Start"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/PCMRecord"
+        app:layout_constraintStart_toStartOf="@+id/PCMRecord"
+        app:layout_constraintTop_toBottomOf="@+id/PCMRecord" />
+
+    <Button
+        android:id="@+id/Mp3Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Mp3Play"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/PCMplay"
+        app:layout_constraintStart_toStartOf="@+id/PCMplay"
+        app:layout_constraintTop_toBottomOf="@+id/PCMplay" />
+
+
+</android.support.constraint.ConstraintLayout>
